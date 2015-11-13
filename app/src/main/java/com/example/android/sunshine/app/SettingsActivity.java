@@ -19,6 +19,7 @@ public class SettingsActivity extends PreferenceActivity
         // updated when the preference changes.
         bindPreferenceSummaryToValue(findPreference(getString(R.string
                 .pref_location_key)));
+        bindPreferenceSummaryToValue(findPreference(getString(R.string.temperatureUnits)));
     }
 
     private void bindPreferenceSummaryToValue(Preference preference) {
@@ -50,6 +51,7 @@ public class SettingsActivity extends PreferenceActivity
             if (prefIndex >= 0) {
                 preference.setSummary(listPreference.getEntries()[prefIndex]);
             }
+
         } else {
             preference.setSummary(stringValue);
         }
