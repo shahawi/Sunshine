@@ -16,4 +16,5 @@
     <string name="units_default">metric</string>
     <string name="pref_units_key">temperatureUnits</string>
     <string name="pref_units_default">metric</string>
+    <string name="action_map">map location</string>
 </resources>
