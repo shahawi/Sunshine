@@ -236,7 +236,7 @@ public class ForecastFragment extends Fragment {
                         .appendQueryParameter(FORMAT_PARAM, format)
                         .appendQueryParameter(UNITS_PARAM, units)
                         .appendQueryParameter(DAYS_PARAM, Integer.toString(numDays))
-                        .appendQueryParameter(fa, er)
+                        .appendQueryParameter(fa, BuildConfig.OPEN_WEATHER_MAP_API_KEY)
                         .build();
 
 
